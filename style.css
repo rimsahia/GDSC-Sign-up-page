@@ -233,8 +233,8 @@ input {
   cursor: pointer;
 }
 .login button:hover{
-  background-color: whitesmoke;
-  color: #1a73e8;
+  background-color: rgb(245, 245, 245, 0.5);
+  color: rgb(26, 115, 232);
 }
 .signup button {
   background-color: transparent;
