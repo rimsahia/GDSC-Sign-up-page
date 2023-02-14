@@ -193,6 +193,9 @@ label#terms {
   text-align: left;
   line-height: 10pt;
 }
+.terms-link:hover{
+  text-decoration: none;
+}
 #email,#university,#skills{
   right: 0;
 }
