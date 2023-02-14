@@ -156,6 +156,7 @@ button p {
     "reasons skills"
     "experiences terms"
     "signup login";
+  margin-top: 30px;
 }
 #name {
   grid-area: name;
