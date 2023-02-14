@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up | GDSC</title>
+    <link rel="stylesheet" href="/style.css">
+<link rel="icon" type="image/png"
+    href="https://res.cloudinary.com/startup-grind/image/upload/c_fill,dpr_2.0,f_auto,g_center,h_32,q_auto:good,w_32/v1/gcs/platform-data-dsc/contentbuilder/favicon.png"
+    sizes="32x32">
+</head>
+
+<body>
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="content">
+        <div class="firstpart">
+            <h5 class="site-name">Google Developer Student Club</h5>
+            <p class="slogan">Learn, build, impact.</p>
+            <img class="gdsc-logo" src="/images/logo color.png" alt="GDSC logo">
+            <p class="gdsc-description">By joining a GDSC, you will grow your knowledge in a peer-to-peer learning environment and build solutions for local businesses and your community.</p>
+        </div>
+        <div class="secondpart">
+            <h3>Join us, shape the future!</h3>
+            <div class="google-action">
+                <form style="display:inline" action="https://accounts.google.com/ServiceLogin?rart=ANgoxcdo7lxAvBlPrLveWp_A0HKOabyyYl7S-l2EQgL3Gtmu42l89V5N2vUuODpX5FPfcahzvh1mgAw6punELaMbbrGTtXZwNw" method="get">
+                <button>
+                    <img src="/images/google icon.png" alt="">
+                    <p>Sign up with Google</p>
+                </button>
+                </form>
+                <P class="or">OR</P>
+                <p class="create"><a href="#">Create Account</a></p>
+            </div>
+            <div class="inputs">
+                <input type="text" id="name" name="name" placeholder="Full Name" title="Full Name" pattern="[a-z][A-Z]" required >
+
+                <input type="email" id="email" name="email" placeholder="Email" title="Email" required>
+
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" title="Phone Number" required>
+
+                <input type="text" id="university" name="university" placeholder="University Name" title="University Name" required>
+
+                <input type="text" id="reasons" name="reasons" placeholder="Tell us why you want to join GDSC..." title="Tell us why you want to join GDSC..." size="400" required>
+
+                <input type="text" id="skills" name="skills" placeholder="Technical skills..." title="Technical skills..." size="600" required>
+
+                <input type="text" id="experiences" name="experiences"
+                    placeholder="Previous tech-related experiences..." title="Previous tech-related experiences..." size="1000">
+
+                <div class="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms" id="terms"> Read and agree to the <a href="#" class="terms-link">terms</a> and <a href="#" class="terms-link">conditions</a></label>
+                </div>
+
+                <form class="signup" style="display:inline"
+                    action="https://www.example.com"
+                    method="get">
+                    <button>
+                        Sign Up
+                    </button>
+                </form>
+                <form class="login" style="display:inline" action="https://www.example.com" method="get">
+                    <button>
+                        Log In
+                    </button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+</body>
+
+</html>

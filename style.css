@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "Product Sans Regular";
+  font-style: normal;
+  src: local("Product Sans Regular"),
+    url("ProductSans-Regular.woff") format("woff");
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+html {
+  height: 100%;
+  font-family: "Product Sans Regular";
+}
+
+body {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(
+    -60deg,
+    #fabc07 10%,
+    #1a73e8 70%,
+    #ea4235 90%,
+    #0d9d58 10%
+  );
+  bottom: 0;
+  left: -50%;
+  opacity: 0.7;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-duration: 5s;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  display: flex;
+  border: #0d9d58 1px solid;
+  padding: 1rem;
+  width: 70%;
+  height: fit-content;
+  overflow: scroll;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.firstpart {
+  min-width: 40%;
+  border-right: gray solid 1px;
+  background-image: url(/images/logo\ bg.png);
+  background-size: cover;
+  padding-right: 1rem;
+}
+.firstpart .site-name {
+  text-align: left;
+  margin-top: 0.2rem;
+}
+.slogan {
+  font-weight: 600;
+  margin-top: 6rem;
+  font-size: 2rem;
+}
+.gdsc-logo {
+  border-radius: 200px;
+  width: 20%;
+  background-color: whitesmoke;
+}
+.firstpart .gdsc-description {
+  font-size: 1.2rem;
+  font-weight: 400;
+  width: 90%;
+  margin-inline: auto;
+  margin-top: 1.4rem;
+}
+
+.secondpart {
+  height: 90%;
+  padding-left: 1rem;
+}
+
+.google-action {
+  font-size: 1rem;
+}
+.google-action .or {
+  color: rgb(94, 94, 94);
+  margin: 5px;
+}
+.google-action button {
+  color: gray;
+  font-size: 1.2rem;
+  display: flex;
+  width: fit-content;
+  border-radius: 8px;
+  margin: auto;
+  padding: 8px;
+  border: none;
+  box-shadow: gray 0px 0px 5px 0px;
+  background-color: transparent;
+  cursor: pointer;
+}
+button img {
+  width: 25px;
+}
+button p {
+  margin-block: auto;
+  padding-left: 10px;
+}
+.google-action button:hover{
+  background-color: rgb(26, 115, 232, 0.3);
+  color: rgb(90, 90, 90);
+}
+.google-action .create {
+  margin: 8px;
+}
+.google-action a {
+  color: rgb(94, 94, 94);
+  text-decoration: none;
+}
+.google-action a:hover{
+  color: rgb(54, 54, 54);
+}
+
+.inputs {
+  margin: auto;
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5%;
+  grid-template-areas:
+    "name email"
+    "phone university"
+    "reasons skills"
+    "experiences terms"
+    "signup login";
+}
+#name {
+  grid-area: name;
+}
+#email {
+  grid-area: email;
+}
+#phone {
+  grid-area: phone;
+}
+#university {
+  grid-area: university;
+}
+#reasons {
+  grid-area: reasons;
+}
+#skills {
+  grid-area: skills;
+}
+#experiences {
+  grid-area: experiences;
+}
+input#terms {
+  width: min-content;
+  margin: 0;
+  cursor: pointer;
+}
+label#terms {
+  line-height: 0;
+  font-size: 0.9rem;
+}
+.terms {
+  grid-area: terms;
+  text-align: left;
+  line-height: 10pt;
+}
+#email,#university,#skills{
+  right: 0;
+}
+.signup,
+.login {
+  width: 100%;
+  margin-top: 3%;
+  height: min-content;
+}
+.signup {
+  grid-area: signup;
+}
+.login {
+  grid-area: login;
+}
+
+input {
+  width: 90%;
+  padding: 0.5rem;
+  height: min-content;
+  background-color: rgba(253, 253, 253, 0.3);
+  border: none;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+.inputs button {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+}
+.login button {
+  background-color: #1a73e8;
+  color: whitesmoke;
+  cursor: pointer;
+}
+.login button:hover{
+  background-color: whitesmoke;
+  color: #1a73e8;
+}
+.signup button {
+  background-color: transparent;
+  color: gray;
+  cursor: pointer;
+}
+.signup button:hover{
+  color: rgb(54, 54, 54);
+}
